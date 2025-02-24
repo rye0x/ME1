@@ -14,7 +14,7 @@ void createChildProcessWait(const char *childName)
     char command[] = "C:\\Windows\\System32\\cmd.exe /c exit";
 
     // Create a child process
-    // https://www.geeksforgeeks.org/what-is-createprocess-function-in-windows/
+    //https://stackoverflow.com/questions/42531/how-do-i-call-createprocess-in-c-to-launch-a-windows-executable
     if (!CreateProcess(NULL, command, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi))
     {
         printf("CreateProcess failed (%d).\n", GetLastError());

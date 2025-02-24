@@ -1,10 +1,11 @@
 #include <windows.h>
 #include <stdio.h>
 
+//https://stackoverflow.com/questions/42531/how-do-i-call-createprocess-in-c-to-launch-a-windows-executable
 void createChildProcess(const char *childName)
 {
     STARTUPINFO si;
-    PROCESS_INFORMATION pi;
+    PROCESS_INFORMATION pi;x
 
     ZeroMemory(&si, sizeof(si));
     si.cb = sizeof(si);
